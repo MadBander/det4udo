@@ -20,24 +20,25 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <!-- <script src="js/menu.js" type="text/javascript"></script> -->
+    <script src="js/scripts.js" type="text/javascript"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function(){ 
+		$(document).ready(function(){
 	var touch 	= $('#touch-menu');
 	var menu 	= $('.menu');
- 
+
 	$(touch).on('click', function(e) {
 		e.preventDefault();
 		menu.slideToggle();
 	});
-	
+
 	$(window).resize(function(){
 		var w = $(window).width();
 		if(w > 767 && menu.is(':hidden')) {
 			menu.removeAttr('style');
 		}
 	});
-	
+
 });
 	</script>
 
@@ -53,10 +54,10 @@
 			<div class="header-img"></div>
 			<a href="#"><img src="images/logo.png" alt=""></a>
 			<ul class="menu">
-				
-				
-				
-				
+
+
+
+
 				<li><a href="#">+7 (812) 555-77-33</a></li>
 				<li><a href="#">Контакты</a></li>
 				<li><a href="#">Рассчитать стоимость</a></li>
@@ -213,47 +214,79 @@
 		<div class="wrap-center">
 			<h4 class="tac">Рассчитать стоимость услуг</h4>
 			<div class="calc-1">
-				<a href="#">Название услуги</a>
+				<!-- Модальное окно hw-trigger, data-height - высота (необязательно), data-height - длина (необязательно), внутри должен быть .content -->
+				<a href="#" class="hw-trigger" data-height="500px" data-width="1000px">
+					Название услуги
+					<div class="content">Test</div>
+				</a>
+
 				<fieldset>
-					<lable class="radiolable">
-						<input type="checkbox" value="" name="" class="onclick">Услуга
-					</lable>
+					<label class="radiolable">
+						<!-- data-title - заголовок, который будет отображать улугу например (Интерактив, 45мин), класс обязательно .onclick, value - цена в руб, без знаков. -->
+						<input type="checkbox" data-title="Название услуги" value="10000" name="" class="onclick">Услуга
+					</label>
 				</fieldset>
 			</div>
 			<div class="calc-1">
 				<a href="#">Название услуги</a>
 				<fieldset>
-					<lable class="radiolable">
-						<input type="checkbox" value="" name="" class="onclick">Услуга
-					</lable>
+					<label class="radiolable">
+						<input type="checkbox" data-title="Название услуги" value="10000" name="" class="onclick">Услуга
+					</label>
 				</fieldset>
 			</div>
 			<div class="calc-1">
 				<a href="#">Название услуги</a>
 				<fieldset>
-					<lable class="radiolable">
-						<input type="checkbox" value="" name="" class="onclick">Услуга
-					</lable>
+					<label class="radiolable">
+						<input type="checkbox" data-title="Название услуги" value="10000" name="" class="onclick">Услуга
+					</label>
 				</fieldset>
 			</div>
 			<div class="calc-1">
 				<a href="#">Название услуги</a>
 				<fieldset>
-					<lable class="radiolable">
-						<input type="checkbox" value="" name="" class="onclick">Услуга
-					</lable>
+					<label class="radiolable">
+						<input type="checkbox" data-title="Название услуги" value="10000" name="" class="onclick">Услуга
+					</label>
 				</fieldset>
 			</div>
 			<div class="calc-1">
 				<a href="#">Название услуги</a>
 				<fieldset>
-					<lable class="radiolable">
-						<input type="checkbox" value="" name="" class="onclick">Услуга
-					</lable>
+					<label class="radiolable">
+						<input type="checkbox" data-title="Название услуги" value="10000" name="" class="onclick">Услуга
+					</label>
 				</fieldset>
 			</div>
 		</div>
 	</div>
+
+	<form method="POST" action="send.php">
+
+		<select name="city">
+			<option value="-">Ваш город</option>
+			<option value="trigger">Свой вариант</option>
+		</select>
+
+		<input type="checkbox" name="outofcity" value="За городом" />
+
+		<a href="javascript://" class="hw-trigger2">
+			Заказать
+		</a>
+
+		<div class="hover-window2">
+				<input type="text" name="fio" placeholder="Ваше имя" required="required"/>
+				<input type="text" name="mydate" placeholder="Дата мероприятия" required="required"/>
+				<input type="tel" name="tel" placeholder="Ваш телефон" required="required"/>
+				<input type="text" class="resultsum" value="0" />
+				<input type="text" class="resultuslug" value="" />
+				<button type="submit">Отправить</button>
+			</form>
+		</div>
+
+	</form>
+
 
 	<div class="image"></div>
 
@@ -261,11 +294,12 @@
 		<h4>Спланируйте идеальный праздник для своего ребёнка!</h4>
 		<p>Только до 15.11.16 при заказе любого научного шоу сертификат на тематический детский праздник "Поиск пиратских сокровищ" в подарок! Вы абсолютно бесплатно получите возможность провести еще один яркий день в атмосфере праздника и веселья. <br>Профессиональные ведущие-аниматоры, аквагримм, увлекательные конкурсы, веселые квесты, все это и многое другое сделает праздник вашего ребенка запоминающимся и насыщенным. Звоните, осталось только 5 сертификатов</p>
 	</div>
-		
-	
+
+	<div class="hover-window"><div class="content"></div></div>
+	<div class="hover-window-bg"></div>
 
 	<footer></footer>
 </div>
-	
+
 </body>
 </html>
