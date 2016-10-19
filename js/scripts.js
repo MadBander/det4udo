@@ -42,19 +42,16 @@ $(document).on('change','select[name="city"]',function(){
 
 $(document).on('change','.onclick',function(){
   var uslugi = new Array();
+  var sum = 0;
   $('.onclick:checked').each(function(i,e){
     var usluga = $(e).data('title');
     uslugi.push(usluga);
+    sum += parseInt($(e).val());
   })
+  sum += parseInt($('.onclick2').val());
+  $('.resultsum').val(sum);
 
   uslugi = uslugi.join(',');
   $('.resultuslug').val(uslugi);
 
-  $result = parseInt($('.resultsum').val());
-  if ($(this).is(':checked')) {
-    var sum = $result + parseInt($(this).val());
-  } else {
-    var sum = $result - parseInt($(this).val());
-  }
-  $('.resultsum').val(sum);
 });
