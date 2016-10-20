@@ -51,7 +51,7 @@ $(document).on('change','.onclick',function(){
   sum += parseInt($('.onclick2').val());
   $('.resultsum').val(sum);
 
-  uslugi = uslugi.join(',');
+  uslugi = uslugi.join(', ');
   $('.resultuslug').val(uslugi);
 
 });
