@@ -3,7 +3,7 @@ header('Content-Type: text/html; charset=utf-8');
 
 require_once "mail.php";
 
-$myemail = 'ipacmanx@gmail.com'; //заменить на необходимый имейл
+$myemail = 'sergey.bn.spb@gmail.com'; //заменить на необходимый имейл
 
 $html;
 foreach ($_POST as $key => $value) {
