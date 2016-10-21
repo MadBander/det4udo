@@ -22,8 +22,6 @@
 	}
 
 	header {
-		//width: 100vmax!important;
-		//max-width: 768px;
 		height: 100vmax;
 	}
 	.block-1 p {
@@ -84,7 +82,7 @@
 	}
 
 	.w20, .w25 {
-	    width: 33.333333%!important;
+	    width: 33.333333%;
 	}
 
 	.servises h2 {
@@ -117,12 +115,19 @@
 	.ws_gestures {
 	    padding: 70px 50px;
 	}
+
+	.serv-desc{
+		width:500px;
+	}
 	
 	.podarok {
     	width: 85px;
     	height: 75px;
     	bottom: 30px;
     	left: 20px;
+	}
+	.hover-window2 {
+		width: 295px;
 	}
 }
 @media (max-width: 767px) {
@@ -140,10 +145,13 @@
 		background: #fff;
     	color: #3E4156;
 	}
+	.bgvideo {display:none;	}
 
 	header {
 		height: 100vmax;
 		padding-top: 25vh;
+		background: url('images/video.png') no-repeat center;
+		background-size:cover;
 	}
 
 	header>h1 {
@@ -273,7 +281,7 @@
     	font-size: 22px;
 	}
 	.w20, .w25 {
-	    width: 50%!important;
+	    width: 50%;
 	} 
 	.w100 {
 		width:100%!important;
@@ -316,7 +324,12 @@
     	bottom: 30px;
     	left: 20px;
 	}
-
+	.serv-desc{
+		width: 70vmax;
+	}
+	.hover-window2 {
+		width: 295px;
+	}
 
 }
 @media (max-width: 480px) {
@@ -348,6 +361,51 @@
 	    margin-bottom: 12px;
 	    border-radius: 6px;
 	    font-size: 19px
+	}
+	.ws_gestures {
+		padding: 30px 0;
+	}
+	.w20, .w25{
+		width:100%;
+	}
+	.wcent {
+	    padding: 30px 30px;
+	}
+	.wcent h4 {
+	    font-size: 23px;
+	}
+	.block-4 p {
+	    font-size: 16px;
+	}
+	.calc-1 {height:auto;}
+	.calc-1 a{
+		white-space:normal;
+	}
+	.fs-calc {
+		font-size:18px;
+	}
+
+	.wrap-dop-uslugi label {
+		font-size:20px;
+	}
+	.podarok {
+	    width: 65px;
+	    height: 60px;
+	    bottom: 30px;
+	    left: 20px;
+	}
+	.serv-desc{
+		width: 48vmax;
+		height: 70vh;
+	}
+	.hover-window2 {
+		width: 92vmin;
+	}
+	.hover-window2 input {
+    	width: 99%;
+	}
+	.wrapper-calc {
+		padding:100px 0 0;
 	}
 
 }
