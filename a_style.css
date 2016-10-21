@@ -105,10 +105,11 @@
 
 
 	.servises>div p {
-		top: 75%!important;
+		top: 60%!important;
 	}
 	.w20:hover p {
-		top: 75%!important;
+		top: 60%!important;
+		left: 55%!important;
 		height: 30px!important;
 	}
 

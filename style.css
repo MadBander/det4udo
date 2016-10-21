@@ -354,8 +354,7 @@ header p{
     text-align: center;
     text-transform: uppercase;
 }
-.servises .w25:hover figcaption, 
-.servises .w22:hover figcaption {
+.servises>div:hover figcaption {
 	background-color: rgba(33,171,202,.8);
 	padding: 5% 15%;
 	-webkit-transition: 0.25s;
@@ -386,7 +385,7 @@ header p{
     opacity: 0;
 	padding: 2px 10px 0px;
 	position: absolute;
-        top: 53%;
+        top: 67%;
     left: 50%;
     width: 204px;
     height: 30px;
@@ -425,26 +424,26 @@ header p{
 	overflow: hidden;
 	position: relative;
 }
-.w20 p {
+/*.w20 p {
 	font-size: 80%!important;
     top: 60%!important;
     left: 54%!important;
     width: 175px!important;
     -webkit-transform: scale(0);
     transform: scale(0);
-}
+}*/
 .w20:hover p {
-	font-size: 80%!important;
-	top: 60%!important;
-    left: 54%!important;
-    width: 175px!important;
+	font-size: 75%!important;
+	top: 70%!important;
+    left: 57%!important;
+    width: 165px!important;
     height: 25px!important;
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
 }
 
 .w20 h2{
-	font-size: 100%!important;
+	font-size: 81%!important;
 	line-height: 1.1em!important;
 }
 figcaption {
