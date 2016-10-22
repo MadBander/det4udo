@@ -201,7 +201,7 @@ nav img {
 }
 
 #h-line {
-	height:7px;
+	height:5px;
 	background: url('images/lines.png') repeat;
 	-webkit-transition: all 0.2s ease-in-out 0s;
    -moz-transition: all 0.2s ease-in-out 0s;
@@ -209,13 +209,10 @@ nav img {
    -ms-transition: all 0.2s ease-in-out 0s;
    transition: all 0.2s ease-in-out 0s;
 }
-.h-line {
-	height:4px!important;
-}
 
 header {
 	height: 100vmin;
-	padding-top: 35vh;
+	padding-top: 30%;
 	text-align: center;
 	text-transform: uppercase;
   	overflow: hidden;
@@ -278,7 +275,7 @@ header p{
 .block-2 {
 	text-align: center;
 	background-color: #fff;
-	padding:10vh 0;
+	padding:15% 0;
 }
 .block-2 h3 {
 	margin-bottom: 60px;
@@ -320,7 +317,7 @@ header p{
 
 .block-3 {
 	background-color: white;
-	padding:10vh 0;
+	padding:15% 0;
 	overflow: hidden;
 }
 .block-3 h3 {

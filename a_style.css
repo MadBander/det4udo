@@ -150,7 +150,7 @@
 
 	header {
 		height: 100vmax;
-		padding-top: 25vh;
+		padding-top: 36%;
 		background: url('images/video.png') no-repeat center;
 		background-size:cover;
 	}
@@ -326,7 +326,7 @@
     	left: 20px;
 	}
 	.serv-desc{
-		width: 70vmax;
+		width: 460px;
 	}
 	.hover-window2 {
 		width: 295px;
@@ -335,8 +335,10 @@
 }
 @media (max-width: 480px) {
 	header {
-		height: 100vmax;
-		padding-top: 28vh;
+		height: auto;
+		//max-height:736px;
+		padding-top: 25%;
+		padding-bottom: 10%;
 	}
 	header>h2 {
 	    font-size: 21px;
@@ -346,7 +348,7 @@
 		font-size:180%;
 	}
 	header p {
-		margin-top:28px;
+		margin-top:20px;
 	}
 	.ml27, .ml33, .ml41 {
 		//margin-left:0;
@@ -396,11 +398,11 @@
 	    left: 20px;
 	}
 	.serv-desc{
-		width: 48vmax;
-		height: 70vh;
+		width: 265px;
+		height: 450px;
 	}
 	.hover-window2 {
-		width: 92vmin;
+		width: 91%;
 	}
 	.hover-window2 input {
     	width: 99%;
@@ -413,7 +415,7 @@
 
 /*@media (max-width: 320px) {
 	header {
-		//width: 100vmin!important;
+		//width: 100vw;
 		height: 100vmax;
 		//min-width: 320px;
 	}
