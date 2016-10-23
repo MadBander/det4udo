@@ -28,20 +28,17 @@
     	width: 37.33%;
     	margin-bottom: 30px;
 	}
-	.block-1 h3 {
-    	font-size: 30px;
-    	width: 80%;
-    	margin: 0 auto;
-	}
-	.block-3 h4 {
-        font-size: 19px;
-    	margin: 0px 27px 18px 22px;
-    	text-align: justify;
+	
+	.block-3 ul {
+		padding: 0 38px;
 	}
 	.block-3 li {
-		margin: 0px 55px 0 40px;
-    	font-size: 17px;
+		//margin: 0px 55px 0 40px;
+    	font-size: 23px;
     	text-align: justify;
+	}
+	.block-3 p {
+    	font-size:25px;
 	}
 	
 	.calc-1 {
@@ -81,23 +78,24 @@
     	font-size: 22px;
 	}
 
-	.w20, .w25 {
-	    width: 33.333333%;
+	/*.w20, */
+	.w25 {
+	    width: 50%;
 	}
 
 	.servises h2 {
 	    font: 600 16px Roboto,Arial,Helvetica;
 	}
 
-	.w20 h2 {
+	/*.w20 h2 {
 		font: 600 16px Roboto,Arial,Helvetica;
 		font-size: 94%!important;
-	}
+	}*/
 	.servises>div p {
 	    font-size: 80%;
 	    padding: 5px 10px 0px;
 	    top: 53%;
-	    left: 55%;
+	    left: 53%;
 	    width: 173px;
 	    height: 30px;
 	    margin: -20px 0 0 -100px;
@@ -107,11 +105,11 @@
 	.servises>div p {
 		top: 60%!important;
 	}
-	.w20:hover p {
+	/*.w20:hover p {
 		top: 60%!important;
 		left: 55%!important;
 		height: 30px!important;
-	}
+	}*/
 
 	.ws_gestures {
 	    padding: 70px 50px;
@@ -214,16 +212,13 @@
 	.block-2 ul li {
 		margin:0 0 10px 10px;
 	}
-
-	.block-3 h4 {
-        font-size: 19px;
-    	margin: 0px 27px 18px 22px;
-    	text-align: justify;
+	.block-3 p{font-size: 21px;}
+	.block-3 ul {
+	    padding: 0px 50px;
+	    text-align: justify;
 	}
 	.block-3 li {
-		margin: 0px 55px 0 40px;
-    	font-size: 17px;
-    	text-align: justify;
+		margin: 0 0 10px 0;
 	}
 	
 	.wcent {
@@ -281,21 +276,22 @@
 		padding: 22px 45px;
     	font-size: 22px;
 	}
-	.w20, .w25 {
+	/*.w20, */
+	.w25 {
 	    width: 50%;
 	} 
-	.w100 {
+	/*.w100 {
 		width:100%!important;
-	}
+	}*/
 
 	.servises h2 {
 	    font: 600 16px Roboto,Arial,Helvetica;
 	}
 
-	.w20 h2 {
+	/*.w20 h2 {
 		font: 600 16px Roboto,Arial,Helvetica;
 		font-size: 94%!important;
-	}
+	}*/
 	.servises>div p {
 	    font-size: 80%;
 	    padding: 5px 10px 0px;
@@ -310,10 +306,10 @@
 	.servises>div p {
 		top: 75%!important;
 	}
-	.w20:hover p {
+	/*.w20:hover p {
 		top: 75%!important;
 		height: 30px!important;
-	}
+	}*/
 
 	.ws_gestures {
 	    padding: 70px 50px;
@@ -365,10 +361,31 @@
 	    border-radius: 6px;
 	    font-size: 19px
 	}
+	.wrap-desc {
+    	width: 100%;
+    }
+    .block-2 ul li {
+	    margin: 0px 0 25px 0px;
+	}
+	.block-3 h4 {
+	    font-size: 24px;
+	}
+	.block-3 p {
+	    font-size: 18px;
+	    padding: 10px 11px;
+	}
+	.block-3 ul {
+	    padding: 0px 40px;
+	}
+	.block-3 li {
+		font-size:17px;
+	}
+
 	.ws_gestures {
 		padding: 30px 0;
 	}
-	.w20, .w25{
+	/*.w20,*/ 
+	.w25{
 		width:100%;
 	}
 	.wcent {

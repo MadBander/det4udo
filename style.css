@@ -317,14 +317,44 @@ header p{
 
 .block-3 {
 	background-color: white;
-	padding:15% 0;
+	padding:10% 0;
 	overflow: hidden;
 }
-.block-3 h3 {
+.block-3 span{color:#6aa844;}
+.block-3 img{margin-right:5px;}
+.block-3 h4 {
+	font-size: 35px;
 	text-align: center;
-	font: 300 2.5em Roboto,Arial,Helvetica;
-    margin-bottom: 1.5em;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom:4px;
 }
+.red-text h4{
+	color: #aa3a2e;
+}
+.blue-text h4{
+	color: #012d69;
+}
+.block-3 p {
+	color: #918e8c;
+    font-size: 22px;
+    text-align: center;
+}
+.block-3 ul {
+	padding:0 70px;
+}
+.block-3 li{
+	list-style: initial!important;
+    margin-left: 10px;
+    line-height: 26px;
+    font-size: 18px;
+    color: #3a3b3c;
+}
+/*
+.block-3 span {
+	color: #6aa844;
+	font-weight: 700;}*/
+
 .wrap-desc {
 	width: 50%;
 	float: left;
@@ -335,17 +365,36 @@ header p{
 	overflow: hidden;
 }
 
+.new {
+	background: url('images/new-icon-1.png');
+	background-size: cover;
+}
+.hit {
+	background: url('images/hit-icon.png');
+	background-size: cover;
+}
 
+.servises>div span{
+	position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    //background: #fff;
+    z-index: 99;
+}
 .servises img{
 	display: block;
 	width: 100%;
+	height: 100%;
 }
 
 .servises h2 {
 	word-spacing: -.10em;
 	margin-top: 25px;
     line-height: 1em!important;
-    font: 600 20px Roboto,Arial,Helvetica;
+    font: 600 18px Roboto,Arial,Helvetica;
     font-weight: 700;
     color:#fff;
     text-align: center;
@@ -408,27 +457,28 @@ header p{
 
 .w25{
 	width:25%;
+	height:224px;
 	cursor: pointer;
 	float: left;
 	overflow: hidden;
 	position: relative;
 }
 
-.w20 {
+/*.w20 {
 	width:20%;
 	cursor: pointer;
 	float: left;
 	overflow: hidden;
 	position: relative;
 }
-/*.w20 p {
+.w20 p {
 	font-size: 80%!important;
     top: 60%!important;
     left: 54%!important;
     width: 175px!important;
     -webkit-transform: scale(0);
     transform: scale(0);
-}*/
+}
 .w20:hover p {
 	font-size: 75%!important;
 	top: 70%!important;
@@ -442,7 +492,7 @@ header p{
 .w20 h2{
 	font-size: 81%!important;
 	line-height: 1.1em!important;
-}
+}*/
 figcaption {
     position: absolute;
     top: 0;
@@ -511,21 +561,6 @@ figcaption {
 	margin-bottom:5px;
 }
 
-.block-3 li{
-	list-style: initial!important;
-    margin-left: 54px;
-    line-height: 26px;
-    font-size: 18px;
-    color: #3a3b3c;
-}
-.block-3 img{margin-right:5px;}
-.block-3 h4 {
-	font-size: 22px;
-    font-weight: 500;
-    line-height: 1.3em;
-    margin: 0 0 18px 17px;
-}
-.block-3 span {color: #6aa844;font-weight: 700;}
 .block-4 {
 	padding:110px 0;
 	width: 100%;
