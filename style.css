@@ -317,7 +317,7 @@ header p{
 
 .block-3 {
 	background-color: white;
-	padding:10% 0;
+	padding:8% 0;
 	overflow: hidden;
 }
 .block-3 span{color:#6aa844;}
@@ -346,6 +346,7 @@ header p{
 .block-3 li{
 	list-style: initial!important;
     margin-left: 10px;
+
     line-height: 26px;
     font-size: 18px;
     color: #3a3b3c;
@@ -400,9 +401,22 @@ header p{
     text-align: center;
     text-transform: uppercase;
 }
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+	padding: 21% 13%;
+	z-index:10;
+	-webkit-transition: 0.35s;
+     -moz-transition: 0.35s;
+     -o-transition: 0.35s;
+     transition: 0.35s;
+}
 .servises>div:hover figcaption {
 	background-color: rgba(33,171,202,.8);
-	padding: 5% 15%;
+	padding: 5% 13%;
 	-webkit-transition: 0.25s;
      -moz-transition: 0.25s;
      -o-transition: 0.25s;
@@ -457,7 +471,7 @@ header p{
 
 .w25{
 	width:25%;
-	height:224px;
+	height:18vw;
 	cursor: pointer;
 	float: left;
 	overflow: hidden;
@@ -493,19 +507,6 @@ header p{
 	font-size: 81%!important;
 	line-height: 1.1em!important;
 }*/
-figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-	padding: 15%;
-	z-index:10;
-	-webkit-transition: 0.35s;
-     -moz-transition: 0.35s;
-     -o-transition: 0.35s;
-     transition: 0.35s;
-}
 
 .filtr {
 	position: absolute;

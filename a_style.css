@@ -81,6 +81,7 @@
 	/*.w20, */
 	.w25 {
 	    width: 50%;
+	    height: 32vw;
 	}
 
 	.servises h2 {
@@ -279,6 +280,7 @@
 	/*.w20, */
 	.w25 {
 	    width: 50%;
+	    height: 32vw;
 	} 
 	/*.w100 {
 		width:100%!important;
@@ -392,6 +394,7 @@
 	/*.w20,*/ 
 	.w25{
 		width:100%;
+		height: 70vw;
 	}
 	.wcent {
 	    padding: 30px 30px;
