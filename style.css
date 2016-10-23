@@ -212,7 +212,7 @@ nav img {
 
 header {
 	height: 100vmin;
-	padding-top: 30%;
+	padding-top: 26%;
 	text-align: center;
 	text-transform: uppercase;
   	overflow: hidden;
@@ -434,7 +434,7 @@ figcaption {
      transition: 0.3s;
 }
 
-.servises>div p {
+.servises>div h6 {
     z-index: 15;
     color: #fff;
     letter-spacing: 1px;
@@ -442,6 +442,7 @@ figcaption {
     border:1px solid #fff;
     padding: 0;
     font-size: 100%;
+    font-weight: 300;
     opacity: 0;
 	padding: 2px 10px 0px;
 	position: absolute;
@@ -458,7 +459,7 @@ figcaption {
      -o-transition: 0.4s;
      transition: 0.4s;
 }
-.servises>div:hover p {
+.servises>div:hover h6 {
 	opacity: 1;
     -webkit-transform: scale(1.0);
     transform: scale(1.0);
@@ -534,34 +535,6 @@ figcaption {
 }
 
 
-.serv-desc{
-	width:700px;
-	height:100%;
-	padding: 0 10px 10px;
-
-}
-.serv-desc h2{
-	text-align: center;
-	padding: 10px 0 20px;
-}
-.serv-desc p{
-	text-align:justify;
-}
-
-.serv-desc h4{
-	padding-left: 10px;
-    font-weight: 500;
-    font-size: 20px;
-}
-.serv-desc ul{
-	padding-left: 42px;
-	margin:10px 0 20px;
-}
-.serv-desc li {
-	list-style: initial;
-	margin-bottom:5px;
-}
-
 .block-4 {
 	padding:110px 0;
 	width: 100%;
@@ -613,7 +586,7 @@ figcaption {
 	overflow: visible;
 }
 
-.calc-1 a {
+.calc-1>a {
 	font-size: 13px;
 	font-weight: 600;
 	white-space: nowrap;
@@ -704,7 +677,6 @@ footer{
     height:200px;
     left:50%;
     top:50%;
-    transform:translate(-50%,-50%);
     padding:20px;
     background:#fff;
     color:#000;
@@ -712,6 +684,11 @@ footer{
     z-index:99999999;
     border-radius:3px;
     overflow-y: auto;
+    -moz-transform: translate(-50%,-50%); /* Для Firefox */
+    -ms-transform: translate(-50%,-50%); /* Для IE */
+    -webkit-transform: translate(-50%,-50%); /* Для Safari, Chrome, iOS */
+    -o-transform: translate(-50%,-50%); /* Для Opera */
+    transform: translate(-50%,-50%);
 }
 .hover-window2 {
     position:fixed;
@@ -964,3 +941,217 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
 }
 .mobile-menu i{
 	margin-right:5px;
+}
+/*-----------МОДАЛЬНОЕ ОКНО------------*/
+/* Стили модального окна и содержания 
+-------------------------------------------------------------------------------*/
+ 
+/* слой затемнения */
+ 
+.dm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: none;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+/* активируем модальное окно */
+ 
+.dm-overlay:target {
+    display: block;
+    -webkit-animation: fade .6s;
+    -moz-animation: fade .6s;
+    animation: fade .6s;
+}
+/* блочная таблица */
+ 
+.dm-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+/* ячейка блочной таблицы */
+ 
+.dm-cell {
+    display: table-cell;
+    padding: 1em;
+    vertical-align: middle;
+    text-align: center;
+}
+/* модальный блок */
+ 
+.dm-modal {
+    display: inline-block;
+    padding: 20px;
+    max-width: 40em;
+    background: #2e789b;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.22), 0px 19px 60px rgba(0, 0, 0, 0.3);
+    color: #f6f6f6;
+    text-align: left;
+}
+/* изображения в модальном окне */
+ 
+.dm-modal img {
+    width: 100%;
+    height: auto;
+}
+/* миниатюры изображений */
+ 
+.pl-left,
+.pl-right {
+    width: 25%;
+    height: auto;
+}
+/* миниатюра справа */
+ 
+.pl-right {
+    float: right;
+    margin: 5px 0 5px 15px;
+}
+/* миниатюра слева */
+ 
+.pl-left {
+    float: left;
+    margin: 5px 15px 5px 0;
+}
+/* встраиваемое видео в модальном окне */
+ 
+.video {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* рисуем кнопарь закрытия */
+ 
+.close {
+    z-index: 9999;
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: #cfd8dc;
+    text-align: center;
+    text-decoration: none;
+    line-height: 26px;
+    cursor: pointer;
+}
+.close:hover {text-decoration: none;}
+.close:after {
+    display: block;
+    border: 2px solid #cfd8dc;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    content: 'X';
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    transition: all 0.6s;
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+}
+/* кнопка закрытия при наведении */
+ 
+.close:hover:after {
+    border-color: #fff;
+    color: #fff;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+/* варианты фонвой заливки модального блока */
+ 
+.green {
+    background: #388e3c!important;
+}
+.cyan {
+    background: #0097a7!important;
+}
+.teal {
+    background: #00796b!important;
+}
+/* движуха при появлении блоков с содержанием */
+ 
+@-moz-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.serv-desc{
+	width:700px;
+	height:100%;
+	padding: 0 10px 10px;
+
+}
+.dm-modal h3{
+	text-align: center;
+	padding: 10px 0 20px;
+}
+.dm-modal p{
+	text-align:justify;
+}
+
+.dm-modal h4{
+	padding-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+}
+.dm-modal ul{
+	padding-left: 42px;
+	margin:10px 0 20px;
+}
+.dm-modal li {
+	list-style: initial;
+	margin-bottom:5px;
+}
+
+<a href="#win"></a>
+
+<div class="dm-overlay" id="win">
+				    <div class="dm-table">
+				        <div class="dm-cell">
+				            <div class="dm-modal">
+				                <a href="#close" class="close"></a>
+				                
+				            </div>
+				        </div>
+				    </div>
+				</div>

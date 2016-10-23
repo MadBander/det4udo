@@ -92,7 +92,7 @@
 		font: 600 16px Roboto,Arial,Helvetica;
 		font-size: 94%!important;
 	}*/
-	.servises>div p {
+	/*.servises>div p {
 	    font-size: 80%;
 	    padding: 5px 10px 0px;
 	    top: 53%;
@@ -105,7 +105,7 @@
 
 	.servises>div p {
 		top: 60%!important;
-	}
+	}*/
 	/*.w20:hover p {
 		top: 60%!important;
 		left: 55%!important;
@@ -294,7 +294,7 @@
 		font: 600 16px Roboto,Arial,Helvetica;
 		font-size: 94%!important;
 	}*/
-	.servises>div p {
+	/*.servises>div p {
 	    font-size: 80%;
 	    padding: 5px 10px 0px;
 	    top: 53%;
@@ -307,7 +307,7 @@
 
 	.servises>div p {
 		top: 75%!important;
-	}
+	}*/
 	/*.w20:hover p {
 		top: 75%!important;
 		height: 30px!important;
