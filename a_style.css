@@ -310,6 +310,12 @@
 		top: 75%!important;
 		height: 30px!important;
 	}*/
+	.serv-desc h2 {
+		font-size:23px;
+	}
+	.serv-desc span {
+	    padding-bottom: 40px;
+	}
 
 	.ws_gestures {
 	    padding: 70px 50px;
@@ -380,7 +386,6 @@
 	.block-3 li {
 		font-size:17px;
 	}
-
 	.ws_gestures {
 		padding: 30px 0;
 	}
@@ -397,10 +402,17 @@
 	.block-4 p {
 	    font-size: 16px;
 	}
-	.calc-1 {height:auto;}
+	.wrapper-calc h4 {
+	    font-size: 25px;
+	    font-weight: 600;
+	    margin: 0px 5px 30px;
+	}
+	.calc-1 {height:auto; margin-bottom: 13px;}
 	.calc-1 a{
 		white-space:normal;
 	}
+	.wrap-dop-uslugi h5 {
+    font-size: 22px;}
 	.fs-calc {
 		font-size:18px;
 	}
