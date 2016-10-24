@@ -615,9 +615,9 @@ figcaption {
 
 .calc-1>fieldset>label.radiolable  {
 	width: 100%;
-    display: block; 
+    display: block;
     font-size: 14px;
-    
+
 }
 .calc-1>fieldset>label.radiolable:first-child  {
 	margin-top: 5px;
@@ -771,7 +771,7 @@ footer{
 	width: 100%;
 	height:auto;
 	padding: 0px 0 50px;
-	overflow:hidden; 
+	overflow:hidden;
 	position:relative;
 }
 
@@ -833,6 +833,12 @@ footer{
 	top:30px;
 	left: 0;
 }
+.wrap-mest2 > input, .wrap-mest2 > select, .wrap-mest2 label {
+  position:static;
+}
+.wrap-mest2 {
+  width:250px;
+}
 .wrap-mest h5 {
 	font-size: 26px;
 	font-weight:600;
@@ -840,7 +846,7 @@ footer{
 	color:#313138;
 }
 .wrap-dop-uslugi {
-	width: 320px;
+	width: 330px;
     float: left;
 }
 .wrap-dop-uslugi h5{
@@ -943,11 +949,11 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
 	margin-right:5px;
 }
 /*-----------МОДАЛЬНОЕ ОКНО------------*/
-/* Стили модального окна и содержания 
+/* Стили модального окна и содержания
 -------------------------------------------------------------------------------*/
- 
+
 /* слой затемнения */
- 
+
 .dm-overlay {
     position: fixed;
     top: 0;
@@ -960,7 +966,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     z-index: 1000;
 }
 /* активируем модальное окно */
- 
+
 .dm-overlay:target {
     display: block;
     -webkit-animation: fade .6s;
@@ -968,14 +974,14 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     animation: fade .6s;
 }
 /* блочная таблица */
- 
+
 .dm-table {
     display: table;
     width: 100%;
     height: 100%;
 }
 /* ячейка блочной таблицы */
- 
+
 .dm-cell {
     display: table-cell;
     padding: 1em;
@@ -983,7 +989,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     text-align: center;
 }
 /* модальный блок */
- 
+
 .dm-modal {
     display: inline-block;
     padding: 20px;
@@ -997,32 +1003,32 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     text-align: left;
 }
 /* изображения в модальном окне */
- 
+
 .dm-modal img {
     width: 100%;
     height: auto;
 }
 /* миниатюры изображений */
- 
+
 .pl-left,
 .pl-right {
     width: 25%;
     height: auto;
 }
 /* миниатюра справа */
- 
+
 .pl-right {
     float: right;
     margin: 5px 0 5px 15px;
 }
 /* миниатюра слева */
- 
+
 .pl-left {
     float: left;
     margin: 5px 15px 5px 0;
 }
 /* встраиваемое видео в модальном окне */
- 
+
 .video {
     position: relative;
     overflow: hidden;
@@ -1039,7 +1045,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     height: 100%;
 }
 /* рисуем кнопарь закрытия */
- 
+
 .close {
     z-index: 9999;
     float: right;
@@ -1068,7 +1074,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     transform: scale(0.85);
 }
 /* кнопка закрытия при наведении */
- 
+
 .close:hover:after {
     border-color: #fff;
     color: #fff;
@@ -1078,7 +1084,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     transform: scale(1);
 }
 /* варианты фонвой заливки модального блока */
- 
+
 .green {
     background: #388e3c!important;
 }
@@ -1089,7 +1095,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
     background: #00796b!important;
 }
 /* движуха при появлении блоков с содержанием */
- 
+
 @-moz-keyframes fade {
     from {
         opacity: 0;
@@ -1150,7 +1156,7 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
 				        <div class="dm-cell">
 				            <div class="dm-modal">
 				                <a href="#close" class="close"></a>
-				                
+
 				            </div>
 				        </div>
 				    </div>

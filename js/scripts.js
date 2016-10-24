@@ -48,7 +48,7 @@ $(document).on('change','.onclick',function(){
     uslugi.push(usluga);
     sum += parseInt($(e).val());
   })
-  sum += parseInt($('.onclick2').val());
+
   $('.resultsum').val(sum);
 
   uslugi = uslugi.join(', ');

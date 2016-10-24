@@ -21,7 +21,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" >
-    
+
 
     <!-- Start Slider -->
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
@@ -57,9 +57,9 @@
         f('.nav')[(f(this).scrollTop() > 700 ? "add" : "remove") + "Class"]("scrolled");
       });
     });
-	</script>	
+	</script>
 <script type="text/javascript">
-	$(document).ready(function(){ 
+	$(document).ready(function(){
 	var touch 	= $('#touch-menu');
 	var menu 	= $('.menu');
 
@@ -67,16 +67,16 @@
 		e.preventDefault();
 		menu.slideToggle();
 	});
-	
+
 	$(window).resize(function(){
 		var w = $(window).width();
 		if(w > 767 && menu.is(':hidden')) {
 			menu.removeAttr('style');
 		}
 	});
-	
+
 });
-</script> 
+</script>
 </head>
 <body>
 
@@ -106,7 +106,7 @@
 		<h1>Маленькое чудо детские научные <br>шоу и мастер-классы</h1>
 		<p>Это интересно и познавательно</p>
 	</header>
- 
+
 	<div class="block-1">
 		<p class="ml27">Как сделать выходные с <br>ребенком действительно яркими?</p>
 		<p class="ml33">Как вырвать ребенка из <br>цепких лап гаджетов?</p>
@@ -156,7 +156,7 @@
 			<li><img src="data1/images/4.jpg" alt="4" title="4" id="wows1_5"/></li>
 		</ul></div>
 	<div class="ws_shadow"></div>
-	</div>	
+	</div>
 	<script type="text/javascript" src="engine1/wowslider.js"></script>
 	<script type="text/javascript" src="engine1/script.js"></script>
 
@@ -187,9 +187,9 @@
 			</div>
 		</div>
 	</div>
-		
+
 	<div class="servises bc-w">
-	
+
 		<a href="#win1">
 			<div class="w25">
 				<span class="new"></span>
@@ -200,7 +200,7 @@
 				</figcaption>
 				<div class="hover-border"></div>
 				<h6>Узнать подробнее</h6>
-				
+
 				<div class="dm-overlay" id="win1">
 				    <div class="dm-table">
 				        <div class="dm-cell">
@@ -323,7 +323,7 @@
 
 			</div>
 		</a>
-			
+
 		<a href="#win4">
 			<div class="w25" >
 				<span class="hit"></span>
@@ -448,7 +448,7 @@
 				        </div>
 				    </div>
 				</div>
-				
+
 			</div>
 		</a>
 
@@ -476,7 +476,7 @@
 				        </div>
 				    </div>
 				</div>
-				
+
 			</div>
 		</a>
 
@@ -493,7 +493,7 @@
 </div>
 <!-- КАЛЬКУЛЯТОР -->
 <div class="wrapper-calc bc-w">
-	<div class="mainWrap">	
+	<div class="mainWrap">
 			<h4 class="tac">Спланируйте идеальный праздник для своего ребенка!</h4>
 			<div class="calc-1">
 				<!-- Модальное окно hw-trigger, data-height - высота (необязательно), data-height - длина (необязательно), внутри должен быть .content -->
@@ -953,7 +953,7 @@
 	<div class="mainWrap" style="overflow:visible; position:relative">
 		<form method="POST" action="send.php">
 
-		<div class="wrap-mest">
+		<div class="wrap-mest wrap-mest2">
 			<h5>Место проведения</h5>
 				<select class="drop-select" name="city">
 					<option>У вас дома</option>
@@ -961,13 +961,16 @@
 					<option>Школьный класс</option>
 					<option value="trigger">Свой вариант</option>
 				</select>
-			<br>
+
+			<input type="text" class="resultsum not" value="0" />
+			<input type="text" class="resultuslug not" value="" />
 		</div>
 
 		<div class="wrap-dop-uslugi">
 			<h5>Дополнительные услуги</h5>
 			<label class="radiolable">
-			<input type="checkbox"  data-title="За городом" name="outsidethecity" value="500" class="onclick"/>За городом</label>
+			<input type="checkbox"  data-title="За городом" name="outsidethecity" value="500" class="onclick"/>За городом
+			</label>
 			<label class="radiolable">
 			<input type="checkbox" data-title="Изготовления мороженного" name="icecream" value="4000" class="onclick"/>Изготовления мороженного</label>
 			<label class="radiolable">
@@ -979,20 +982,7 @@
 			<label class="radiolable">
 			<input type="checkbox" data-title="Гейзер из кока-колы" name="geyserofcocacola" value="1000" class="onclick"/>Гейзер из кока-колы</label>
 			<label class="radiolable">
-				<select class="onclick onclick2" data-title="Радужные очки" name="rainbowglasses">
-					<option>0</option>
-					<option value="300">1</option>
-					<option value="600">2</option>
-					<option value="900">3</option>
-					<option value="1200">4</option>
-					<option value="1500">5</option>
-					<option value="3000">10</option>
-					<option value="4500">15</option>
-					<option value="6000">20</option>
-					<option value="7500">25</option>
-					<option value="9000">30</option>
-				</select>
-				Радужные очки
+				<input type="checkbox" class="onclick" data-title="Радужные очки" name="rainbowglasses" value="300" /> Радужные очки
 			</label>
 		</div>
 
@@ -1004,8 +994,6 @@
 					<input type="text" name="fio" placeholder="Ваше имя" required="required"/>
 					<input type="text" name="mydate" placeholder="Дата мероприятия" required="required"/>
 					<input type="tel" name="tel" placeholder="Ваш телефон" required="required"/>
-					<input type="text" class="resultsum not" value="0" />
-					<input type="text" class="resultuslug not" value="" />
 					<button type="submit">Отправить</button>
 				</form>
 			</div>
@@ -1015,7 +1003,7 @@
 </div>
 
 	<div class="image"></div>
-<!-- 
+<!--
 	<div class="block-5 tac">
 		<h4>Спланируйте идеальный праздник для своего ребёнка!</h4>
 		<p>Только до 15.11.16 при заказе любого научного шоу сертификат на тематический детский праздник "Поиск пиратских сокровищ" в подарок! Вы абсолютно бесплатно получите возможность провести еще один яркий день в атмосфере праздника и веселья. <br>Профессиональные ведущие-аниматоры, аквагримм, увлекательные конкурсы, веселые квесты, все это и многое другое сделает праздник вашего ребенка запоминающимся и насыщенным. Звоните, осталось только 5 сертификатов</p>
@@ -1025,7 +1013,7 @@
 	<div class="hover-window-bg"></div>
 
 	<footer>
-		
+
 		<div style="display: none;" class="mainWrap bc-w">
 			<div class="owl-carousel">
 			  <div> <img src="1/1.jpg" alt=""></div>
@@ -1037,7 +1025,7 @@
 			  <div> <img src="1/1.jpg" alt=""> </div>
 			</div>
 		</div>
-		
+
 	</footer>
 </div>
 
@@ -1050,7 +1038,7 @@
 		</div>
 	</div>
 </div>
-		
+
 </body>
 <script type="text/javascript">
 	$('.not').on('keyup keypress', function(e) {
