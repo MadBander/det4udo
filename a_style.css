@@ -3,7 +3,6 @@
 
 	.mainWrap{
 		width:768px;
-		margin:0 auto;
 	}
 	.menu ul {top:37px;}
 	.menu li a{
@@ -43,6 +42,8 @@
 	
 	.calc-1 {
     	width: 50%;
+    	height: 150px;
+    	margin:0;
 	}
 	.calc-1 a {
     	font-size: 18px;
@@ -58,27 +59,19 @@
 	.calc-1>fieldset>label.radiolable:first-child {
 	    margin: 15px 0px 10px 10px;
 	}
+	
 	.wrap-form {
-	    padding: 50px 0 150px;
+	    padding: 50px 0 50px;
 	}
-	.wrap-mest {
-	    margin-left: 29px;
-	}
-	.wrap-dop-uslugi {
-		margin-left: 70px;
-	}
-	.wrap-dop-uslugi label {
-	    margin: 11px 0px 4px 0;
-	    font-size: 22px;
+	.form-block {
+		margin:0 0 20px 45px;
+		    width: 319px;
 	}
 	.button-order {
-	    top: 325px;
-    	left: 258px;
-	    padding: 22px 45px;
-    	font-size: 22px;
+		padding: 18px 37px;
+		margin: 35px 0 0;
+		font-size: 20px;
 	}
-
-	/*.w20, */
 	.w25 {
 	    width: 50%;
 	    height: 32vw;
@@ -88,38 +81,10 @@
 	    font: 600 16px Roboto,Arial,Helvetica;
 	}
 
-	/*.w20 h2 {
-		font: 600 16px Roboto,Arial,Helvetica;
-		font-size: 94%!important;
-	}*/
-	/*.servises>div p {
-	    font-size: 80%;
-	    padding: 5px 10px 0px;
-	    top: 53%;
-	    left: 53%;
-	    width: 173px;
-	    height: 30px;
-	    margin: -20px 0 0 -100px;
-	}
-
-
-	.servises>div p {
-		top: 60%!important;
-	}*/
-	/*.w20:hover p {
-		top: 60%!important;
-		left: 55%!important;
-		height: 30px!important;
-	}*/
-
 	.ws_gestures {
 	    padding: 70px 50px;
 	}
 
-	.serv-desc{
-		width:500px;
-	}
-	
 	.podarok {
     	width: 85px;
     	height: 75px;
@@ -129,10 +94,13 @@
 	.hover-window2 {
 		width: 295px;
 	}
+	.block-1 h3 {
+		width: 69%;
+	}
 }
 @media (max-width: 767px) {
 
-	.mainWrap{width:auto;}
+	.mainWrap{width:auto; margin:0;}
 
 	.menu{display:none;}
 
@@ -149,15 +117,15 @@
 
 	header {
 		height: 100vmax;
-		padding-top: 36%;
 		background: url('images/video.png') no-repeat center;
 		background-size:cover;
+		margin:0;
 	}
 
-	header>h1 {
+	header h1 {
 	    font-size: 223%;
 	}
-	header>h2 {
+	header h2 {
 	    font-size: 25px;
 	    font-weight: 500;
 	    margin-bottom: 28px;
@@ -201,12 +169,12 @@
 		height: auto;
 	}
 	.block-1 p {
-    	width: 58%;
+    	width: 49%;
     	margin-bottom: 30px;
 	}
 	.block-1 h3 {
     	font-size: 23px;
-    	width: 80%;
+    	width: 64%;
     	margin: 0 auto;
 	}
 
@@ -235,6 +203,8 @@
 	
 	.calc-1 {
 	    width: 100%;
+	    height: 120px;
+	    margin: 0;
 	}
 	.calc-1 a {
     	font-size: 18px;
@@ -251,74 +221,25 @@
 	    margin: 15px 0px 10px 10px;
 	}
 
-	.wrap-mest {
-	    margin-left: -124px;
-	    left: 50%;
-	    width: 245px;
-	    height: 200px;
-	    float: none;
+	.form-block {
+		margin:0 0 20px 45px;
+		    width: 319px;
 	}
 	.wrap-form {
-	    padding: 50px 0 150px;
-	}
-	.wrap-dop-uslugi {
-		margin-left: -141px;
-	    left: 50%;
-	    position: relative;
-	}
-	.wrap-dop-uslugi label {
-	    margin: 11px 0px 4px 0;
-	    font-size: 22px;
+	    padding: 50px 0 50px;
 	}
 	.button-order {
-	    top: 525px;
-    	margin-left: -101px;
-    	left: 50%;
-		padding: 22px 45px;
-    	font-size: 22px;
+		padding: 18px 37px;
+		margin: 35px 0 0;
+		font-size: 20px;
 	}
-	/*.w20, */
 	.w25 {
 	    width: 50%;
 	    height: 32vw;
 	} 
-	/*.w100 {
-		width:100%!important;
-	}*/
-
 	.servises h2 {
 	    font: 600 16px Roboto,Arial,Helvetica;
 	}
-
-	/*.w20 h2 {
-		font: 600 16px Roboto,Arial,Helvetica;
-		font-size: 94%!important;
-	}*/
-	/*.servises>div p {
-	    font-size: 80%;
-	    padding: 5px 10px 0px;
-	    top: 53%;
-	    left: 55%;
-	    width: 173px;
-	    height: 30px;
-	    margin: -20px 0 0 -100px;
-	}
-
-
-	.servises>div p {
-		top: 75%!important;
-	}*/
-	/*.w20:hover p {
-		top: 75%!important;
-		height: 30px!important;
-	}*/
-	.serv-desc h2 {
-		font-size:23px;
-	}
-	.serv-desc span {
-	    padding-bottom: 40px;
-	}
-
 	.ws_gestures {
 	    padding: 70px 50px;
 	}
@@ -329,9 +250,6 @@
     	bottom: 30px;
     	left: 20px;
 	}
-	.serv-desc{
-		width: 460px;
-	}
 	.hover-window2 {
 		width: 295px;
 	}
@@ -339,26 +257,24 @@
 }
 @media (max-width: 480px) {
 	header {
-		height: auto;
-		//max-height:736px;
-		padding-top: 25%;
-		padding-bottom: 10%;
+		height: 100vh;
+		max-height: 736px;
 	}
-	header>h2 {
+	header h2 {
 	    font-size: 21px;
 	    margin-bottom: 10px;
 	}
-	header>h1 {
+	header h1 {
 		font-size:180%;
 	}
 	header p {
 		margin-top:20px;
 	}
-	.ml27, .ml33, .ml41 {
-		//margin-left:0;
-	}
+
 	.block-1 {
 		text-shadow:none;
+
+    padding: 50px 0;
 	}
 	.block-1 p, .block-1 h3 {
 	    width: 90%;
@@ -372,11 +288,16 @@
 	.wrap-desc {
     	width: 100%;
     }
+    .block-2 {padding:50px 0;}
     .block-2 ul li {
 	    margin: 0px 0 25px 0px;
+	    width: 165px;
+	    height: 165px;
 	}
+	.block-3 {padding: 10px 0 45px}
 	.block-3 h4 {
 	    font-size: 24px;
+	    margin-top: 45px;
 	}
 	.block-3 p {
 	    font-size: 18px;
@@ -389,12 +310,12 @@
 		font-size:17px;
 	}
 	.ws_gestures {
-		padding: 30px 0;
+		padding: 70px 0;
 	}
-	/*.w20,*/ 
 	.w25{
 		width:100%;
 		height: 70vw;
+		max-height: 230px;
 	}
 	.wcent {
 	    padding: 30px 30px;
@@ -414,24 +335,19 @@
 	.calc-1 a{
 		white-space:normal;
 	}
-	.wrap-dop-uslugi h5 {
-    font-size: 22px;}
+	.form-block {
+	    margin: 0 auto 30px;
+    	width: 90%;
+    	float: none;
+	}
 	.fs-calc {
 		font-size:18px;
-	}
-
-	.wrap-dop-uslugi label {
-		font-size:20px;
 	}
 	.podarok {
 	    width: 65px;
 	    height: 60px;
 	    bottom: 30px;
 	    left: 20px;
-	}
-	.serv-desc{
-		width: 265px;
-		height: 450px;
 	}
 	.hover-window2 {
 		width: 91%;
@@ -440,8 +356,9 @@
     	width: 99%;
 	}
 	.wrapper-calc {
-		padding:100px 0 0;
+		padding:50px 0 0;
 	}
+	.block-4 {padding:80px 0;}
 
 }
 
