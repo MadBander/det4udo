@@ -10,8 +10,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Маленькое чудо</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="a_style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/a_style.css">
+	<link rel="stylesheet" href="css/animate.min.css">
 	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -27,6 +28,11 @@
 	<link rel="stylesheet" type="text/css" href="engine1/style.css" />
 	<script type="text/javascript" src="engine1/jquery.js"></script>
 	<!-- EndSlider -->
+
+	<script src="js/wow.min.js"></script>
+	<script>
+	    new WOW().init();
+	</script>
 
 	<!--
 	<link rel="stylesheet" href="owlcarousel/owl.carousel.css">
@@ -47,7 +53,7 @@
 	$(function () {
       var element = $(".hid"), display;
       $(window).scroll(function () {
-        display = $(this).scrollTop() >= 700;
+        display = $(this).scrollTop() >= 500;
         display != element.css('opacity') && element.stop().animate({ 'opacity': display }, 500);
       });
     });
@@ -77,6 +83,10 @@
 				}
 			});
 
+			$('.fadeInLeft').addClass('wow fadeInLeft');
+			$('.fadeInRight').addClass('wow fadeInRight');
+			$('.zoomIn').addClass('wow zoomIn');
+			$('.swing').addClass('wow swing');
 		});
 	</script>
 </head>
@@ -111,10 +121,10 @@
 </header>
 
 <div class="block-1">
-	<p class="ml27">Как сделать выходные с <br>ребенком действительно яркими?</p>
-	<p class="ml33">Как вырвать ребенка из <br>цепких лап гаджетов?</p>
-	<p class="ml41">Как привить ребенку <br>любовь к естественным наукам?</p>
-	<h3>Устали от однообразного отдыха с детьми и многообразия выбора? Всегда хотели, чтобы все было на одном сайте и макcимально близко к Вам?</h3>
+	<p class="ml27 fadeInLeft" data-wow-delay="0.5s">Как сделать выходные с <br>ребенком действительно яркими?</p>
+	<p class="ml33 fadeInRight" data-wow-delay="1.5s">Как вырвать ребенка из <br>цепких лап гаджетов?</p>
+	<p class="ml41 fadeInLeft" data-wow-delay="2.5s">Как привить ребенку <br>любовь к естественным наукам?</p>
+	<h3 class="zoomIn" data-wow-delay="3.5s">Устали от однообразного отдыха с детьми и многообразия выбора? Всегда хотели, чтобы все было на одном сайте и макcимально близко к Вам?</h3>
 </div>
 
 <div class="block-2">
@@ -481,6 +491,7 @@
 </div>
 
 <!-- КАЛЬКУЛЯТОР -->
+<form method="POST" action="https://formspree.io/anastasia.salun@yandex.ru">
 <div id="calc" class="wrapper-calc bc-w">
 	<div class="mainWrap">
 		<h4 class="tac">Спланируйте идеальный праздник для своего ребенка!</h4>
@@ -998,9 +1009,9 @@
 				</div>
 			<fieldset>
 				<label class="radiolable">
-					<input type="checkbox" data-title="Новогодние эксперименты 60 мин" value="14000" name="" class="onclick">Длительность 60 мин</label>
+					<input type="checkbox" data-title="Новогодние эксперименты 60 мин" value="14000" class="onclick">Длительность 60 мин</label>
 				<label class="radiolable">
-					<input type="checkbox" data-title="Новогодние эксперименты 80 мин" value="17000" name="" class="onclick">Длительность 80 мин</label>
+					<input type="checkbox" data-title="Новогодние эксперименты 80 мин" value="17000" class="onclick">Длительность 80 мин</label>
 			</fieldset>
 		</div>
 	</div>
@@ -1008,7 +1019,7 @@
 
 <div class="wrap-form bc-w">
 	<div class="mainWrap">
-		<form method="POST" action="send.php">
+		<form method="POST" action="https://formspree.io/lord1393@gmail.com">
 
 			<div class="form-block wrap-mest label-checkbox">
 				<h5>Место проведения</h5>
@@ -1045,25 +1056,9 @@
 				</label>
 			</div>
 
-
-		<!-- <div class="form-block">
-				<input type="text" disabled class="resultuslug not" value="" />
-				<input type="text" disabled class="resultsum not" value="0" />
-				<div class="btn-zakaz">
-					<a class="button-order hw-trigger2" href="javascript://">Заказать</a>
-				</div>
-			</div>
-
-			<div class="hover-window2">
-					<input type="text"  name="fio" placeholder="Ваше имя" required="required"/>
-					<input type="text" name="mydate" placeholder="Дата мероприятия" required="required"/>
-					<input type="tel" name="tel" placeholder="Ваш телефон" required="required"/>
-					<button type="submit">Отправить</button>
-			</div> -->
-
 			<div class="form-block">
-				<input type="text" disabled class="resultuslug not" value="" />
-				<input type="text" disabled class="resultsum not" value="0" />
+				<input type="text" name="uslugi" class="resultuslug not" value="" />
+				<input type="text" name="summa" class="resultsum not" value="0" />
 				<div class="btn-zakaz">
 					<a class="button-order" href="#win99">Заказать</a>
 				</div>
@@ -1083,15 +1078,20 @@
 			    </div>
 			</div>
 
-		</form>
+		
 	</div>
 </div>
+</form>
 
-<div class="image"></div>
-<div class="hover-window"><div class="content"></div></div>
-<div class="hover-window-bg"></div>
 
 <footer>
+<div class="middle">
+	<ul>
+		<li><a href="https://vk.com/nauchnyeshou" target="_blank"><img src="images/vk.png" alt=""></a></li>
+		</a></li>
+	</ul>
+	<p>Copyright 2016</p>
+</div>
 	<!-- <div style="display: none;" class="mainWrap bc-w">
 		<div class="owl-carousel">
 		  <div> <img src="1/1.jpg" alt=""></div>
@@ -1107,7 +1107,7 @@
 
 <!-- Бонус -->
 <a href="#bonus">
-	<div class="podarok shake hid">
+	<div class="podarok swing hid" data-wow-duration="2.5s" data-wow-delay="5s" data-wow-iteration="20">
 		<img src="images/podarok1.png" alt="">
 	</div>
 </a>
@@ -1120,6 +1120,7 @@
 				<div class="block-5">
 				<h3>Спланируйте идеальный праздник для своего ребёнка!</h3>
 				<p>Только до 15.11.16 при заказе любого научного шоу сертификат на тематический детский праздник "Поиск пиратских сокровищ" в подарок! Вы абсолютно бесплатно получите возможность провести еще один яркий день в атмосфере праздника и веселья. <br>Профессиональные ведущие-аниматоры, аквагримм, увлекательные конкурсы, веселые квесты, все это и многое другое сделает праздник вашего ребенка запоминающимся и насыщенным. Звоните, осталось только 5 сертификатов</p>
+				<div class="wrap-share"><a href="https://vk.com/nauchnyeshou" target="_blank">Рассказть друзьям о шоу в Вконтекте</a></div>
 			</div>
             </div>
         </div>

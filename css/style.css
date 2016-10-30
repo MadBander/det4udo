@@ -203,7 +203,7 @@ nav img {
 
 #h-line {
 	height:5px;
-	background: url('images/lines.png') repeat;
+	background: url('../images/lines.png') repeat;
 	-webkit-transition: all 0.2s ease-in-out 0s;
    -moz-transition: all 0.2s ease-in-out 0s;
    -o-transition: all 0.2s ease-in-out 0s;
@@ -248,7 +248,7 @@ header p{
 }
 
 .block-1 {
-	background: url('images/para2.jpg') top center no-repeat;
+	background: url('../images/para2.jpg') top center no-repeat;
 	background-size: cover;
 	padding: 4% 0;
 	box-sizing: border-box;
@@ -369,11 +369,11 @@ header p{
 }
 
 .new {
-	background: url('images/new-icon-1.png');
+	background: url('../images/new-icon-1.png');
 	background-size: cover;
 }
 .hit {
-	background: url('images/hit-icon.png');
+	background: url('../images/hit-icon.png');
 	background-size: cover;
 }
 
@@ -510,7 +510,7 @@ figcaption {
 .block-4 {
 	padding:110px 0;
 	width: 100%;
-	background: url('images/bg1.jpg');
+	background: url('../images/bg1.jpg');
 	background-size: cover;
 }
 .block-4 h3{
@@ -612,10 +612,24 @@ fieldset>lable.radiolable input{
 }
 footer{
 	width:100%;
-	height:300px;
+	height:200px;
 	background-color:#111;
+	display: table;
+    text-align: center;
+}
+footer p{
+	color:#fff;
+	vertical-align:middle;
+	padding: 0px;
+}
+footer ul li{
+	display:inline-table;
 }
 
+footer ul li img {
+	width: 45px;
+
+}
 /* Всплывающие окна */
 /*.hw-trigger .content {
   display:none;
@@ -792,7 +806,7 @@ footer{
 }
 .slider-img {
 	width: 100%;
-	background: url(images/bg2.jpg) no-repeat ;
+	background: url(../images/bg2.jpg) no-repeat ;
 	background-size: cover;
 }
 
@@ -1025,16 +1039,19 @@ to{-webkit-transform:rotate3d(0,0,0,0deg);transform:rotate3d(0,0,0,0deg)}
 	list-style: initial;
 	margin-bottom:5px;
 }
-
-<a href="#win"></a>
-
-<div class="dm-overlay" id="win">
-					    <div class="dm-table">
-					        <div class="dm-cell">
-					            <div class="dm-modal">
-					                <a href="#close" class="close"></a>
-									
-					            </div>
-					        </div>
-					    </div>
-					</div>
+.wrap-share {
+	text-align: center;
+}
+.wrap-share a {
+	display:inline-table;
+	width: 60%;
+	background:#d4a002;
+	border-radius:20px;
+	color:#fff;
+	font-weight:600;
+	line-height: 2em;
+}
+.wrap-share a:hover {
+	color: #fff;
+	text-decoration:none;
+}

@@ -21,7 +21,7 @@
 	}
 
 	header {
-		height: 100vmax;
+		height: 100vh;
 	}
 	.block-1 p {
     	width: 37.33%;
@@ -116,7 +116,7 @@
 	.bgvideo {display:none;	}
 
 	header {
-		height: 100vmax;
+		height: 100vh;
 		background: url('images/video.png') no-repeat center;
 		background-size:cover;
 		margin:0;
